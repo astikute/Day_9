@@ -23,6 +23,17 @@ namespace Day_9
             Console.WriteLine("Izvade no TestaObjekts: " + TestaObjekts.skaitlis);
             Console.WriteLine("Izvade no TestaObjekts2: " + TestaObjekts2.skaitlis);
 
+            TestaObjekts.Set(11);
+            Console.WriteLine("Izvade ar Get: " + TestaObjekts.Get());
+
+            //Uzdevums
+            SimboluVirkne Virkne = new SimboluVirkne();
+            Console.WriteLine(Virkne.SavienotVirkni("Būs ", "jau ", "labi!"));
+
+            SimboluVirkne Simboli = new SimboluVirkne();
+            Simboli.Set("Būs ", "jau ", "labi!");
+            Console.WriteLine(Simboli.Get());
+ 
             Console.Read();
         }
     }
